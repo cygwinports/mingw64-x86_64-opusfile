@@ -2,7 +2,7 @@ CROSS_HOST="x86_64-w64-mingw32"
 inherit cross
 
 NAME="mingw64-x86_64-opusfile"
-VERSION=0.4
+VERSION=0.8
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="High-level Opus decoder API for Win64 toolchain"
@@ -11,8 +11,5 @@ for decoding and seeking in .opus files."
 HOMEPAGE="http://www.opus-codec.org/"
 SRC_URI="http://downloads.xiph.org/releases/opus/opusfile-${VERSION}.tar.gz"
 SRC_DIR="opusfile-${VERSION}"
-PATCH_URI="0.4-win32.patch"
 
 CYGCONF_ARGS="--disable-doc"
-
-KEEP_LA_FILES="none"
